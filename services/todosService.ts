@@ -8,6 +8,9 @@ export type TTodo = {
 }
 
 
-const fetchTodos = async () => {
+export const fetchTodos = async () => {
   const { data } = await Service.api.get(EndPoints.todos)
+
+
+  return data
 }

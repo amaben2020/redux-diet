@@ -3,8 +3,7 @@ import axios from 'axios';
 requests*/
 /*JSON Server has CORS Policy by default.*/
 const api = axios.create({
-  baseURL: process.env.NODE_ENV === 'production' ? process.env.REACT_APP_URL
-    : 'https://jsonplaceholder.typicode.com/',
+  baseURL: 'https://jsonplaceholder.typicode.com/',
 });
 
 const api2 = axios.create({

@@ -5,11 +5,12 @@ import {
 } from '@reduxjs/toolkit';
 import counterReducer from '../features/counter/counterSlice';
 import kanyeReducer from '../features/kanye/kanyeSlice';
-
+import todosReducer from './../features/todos/todosSlice'
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
     kanyeQuote: kanyeReducer,
+    todos: todosReducer,
   },
 });
 
