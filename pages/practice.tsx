@@ -16,7 +16,7 @@ const Practice = () => {
     <div>
       {loading && (
         <div style={{ width: 160 }}>
-          Loading ...{' '}
+          Loading ...
           <Spinner color='info' size='sm' aria-label='Info spinner example' />
         </div>
       )}
